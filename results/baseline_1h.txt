@@ -1,0 +1,31 @@
+Loading BTC-USD 1H from frozen CSV...
+Loaded 17318 bars from frozen CSV.
+Running local causal kNN backtest...
+============================================================
+LOCAL PYTHON BASELINE BACKTEST
+============================================================
+Symbol:                  BTC-USD
+Timeframe:               1h
+Data period:             2024-09-13 00:00:00+00:00 to 2026-09-12 11:00:00+00:00
+Bars:                    17318
+------------------------------------------------------------
+Initial Capital:         100,000.00
+Commission:              0.050% per side
+Slippage:                0.020%
+Position Size:           10.0% equity notional
+------------------------------------------------------------
+Total Trades:            628
+Net Profit:              -8,805.86
+Net Profit %:            -8.81%
+Profit Factor:           0.776
+Win Rate:                32.01%
+Max Drawdown:            -10.44%
+Sharpe Ratio:            -1.64
+Average Trade PnL:       -14.02
+Average Bars Held:       9.26
+Max Consecutive Losses:  14
+Percent Time In Market:  33.57%
+============================================================
+
+FINAL EQUITY: $91,194.14
+NET PnL:      $-8,805.86

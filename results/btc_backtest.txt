@@ -1,0 +1,132 @@
+Loading BTC-USD 4H from frozen CSV...
+Bars: 4333
+  First: 2024-09-13 00:00:00+00:00
+  Last:  2026-09-12 08:00:00+00:00
+
+======================================================================
+SCENARIO: ZERO COST
+======================================================================
+Total Trades:          132
+Ideal Gross PnL:       $      4,656.89
+Total Cost:            $         -0.00
+  Entry Slippage:      $         -0.00
+  Exit Slippage:       $         -0.00
+  Entry Commission:    $         -0.00
+  Exit Commission:     $         -0.00
+Net PnL:               $      4,656.89
+Identity check:        OK
+
+Win Rate:              38.64%
+Net Profit Factor:     1.230
+
+--- UNCONDITIONAL IC ---
+  N observations:        3977
+  Pearson IC:            -0.02800
+  Spearman IC:           -0.02912
+  Directional Accuracy:  48.63%
+  ACF block_len (auto):  140
+
+--- PREDICTION QUINTILES ---
+  Q1: +0.0475%   (n = 796)
+  Q2: -0.0134%   (n = 795)
+  Q3: +0.0325%   (n = 795)
+  Q4: -0.0474%   (n = 795)
+  Q5: -0.0325%   (n = 796)
+  Q5 - Q1 spread:        -0.0800%
+  Rank corr (Q, mean):   -0.800
+
+======================================================================
+SCENARIO: COMMISSION ONLY
+======================================================================
+Total Trades:          132
+Ideal Gross PnL:       $      4,590.95
+Total Cost:            $     -1,303.19
+  Entry Slippage:      $         -0.00
+  Exit Slippage:       $         -0.00
+  Entry Commission:    $       -652.95
+  Exit Commission:     $       -650.24
+Net PnL:               $      3,287.76
+Identity check:        OK
+
+Win Rate:              38.64%
+Net Profit Factor:     1.157
+
+--- UNCONDITIONAL IC ---
+  N observations:        3977
+  Pearson IC:            -0.02800
+  Spearman IC:           -0.02912
+  Directional Accuracy:  48.63%
+  ACF block_len (auto):  140
+
+--- PREDICTION QUINTILES ---
+  Q1: +0.0475%   (n = 796)
+  Q2: -0.0134%   (n = 795)
+  Q3: +0.0325%   (n = 795)
+  Q4: -0.0474%   (n = 795)
+  Q5: -0.0325%   (n = 796)
+  Q5 - Q1 spread:        -0.0800%
+  Rank corr (Q, mean):   -0.800
+
+======================================================================
+SCENARIO: SLIPPAGE ONLY
+======================================================================
+Total Trades:          131
+Ideal Gross PnL:       $      3,860.71
+Total Cost:            $       -518.43
+  Entry Slippage:      $       -259.75
+  Exit Slippage:       $       -258.68
+  Entry Commission:    $         -0.00
+  Exit Commission:     $         -0.00
+Net PnL:               $      3,342.28
+Identity check:        OK
+
+Win Rate:              38.17%
+Net Profit Factor:     1.163
+
+--- UNCONDITIONAL IC ---
+  N observations:        3977
+  Pearson IC:            -0.02800
+  Spearman IC:           -0.02912
+  Directional Accuracy:  48.63%
+  ACF block_len (auto):  140
+
+--- PREDICTION QUINTILES ---
+  Q1: +0.0475%   (n = 796)
+  Q2: -0.0134%   (n = 795)
+  Q3: +0.0325%   (n = 795)
+  Q4: -0.0474%   (n = 795)
+  Q5: -0.0325%   (n = 796)
+  Q5 - Q1 spread:        -0.0800%
+  Rank corr (Q, mean):   -0.800
+
+======================================================================
+SCENARIO: FULL COST
+======================================================================
+Total Trades:          131
+Ideal Gross PnL:       $      3,803.16
+Total Cost:            $     -1,802.77
+  Entry Slippage:      $       -258.07
+  Exit Slippage:       $       -257.01
+  Entry Commission:    $       -645.18
+  Exit Commission:     $       -642.51
+Net PnL:               $      2,000.38
+Identity check:        OK
+
+Win Rate:              38.17%
+Net Profit Factor:     1.095
+
+--- UNCONDITIONAL IC ---
+  N observations:        3977
+  Pearson IC:            -0.02800
+  Spearman IC:           -0.02912
+  Directional Accuracy:  48.63%
+  ACF block_len (auto):  140
+
+--- PREDICTION QUINTILES ---
+  Q1: +0.0475%   (n = 796)
+  Q2: -0.0134%   (n = 795)
+  Q3: +0.0325%   (n = 795)
+  Q4: -0.0474%   (n = 795)
+  Q5: -0.0325%   (n = 796)
+  Q5 - Q1 spread:        -0.0800%
+  Rank corr (Q, mean):   -0.800

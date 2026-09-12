@@ -1,0 +1,99 @@
+# Licensing
+
+> **See `LICENSE-MAP.md` for a file-by-file license assignment.**
+
+## Original Indicator
+
+"AI Predictive Flow" by Zeiierman is licensed under
+**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 
+International (CC BY-NC-SA 4.0)**.
+
+Source: https://www.tradingview.com/script/qaaxkW1P-AI-Predictive-Flow-Zeiierman/
+License: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+## This Derivative Work
+
+This repository contains a derivative of the above indicator.
+
+### 1. Code derived from the original indicator — CC BY-NC-SA 4.0
+
+All code in this repository that is derived from "AI Predictive Flow"
+(including Pine Script and Python reimplementations) is licensed under
+**CC BY-NC-SA 4.0** — the same license as the original.
+
+### 2. Documentation (original work) — CC BY 4.0
+
+Documentation authored by this project (including `REPORT.md`,
+`README.md`, `REPRODUCIBILITY.md`, `LICENSE-MAP.md`, and evaluation
+notes) is licensed under **Creative Commons Attribution 4.0
+International (CC BY 4.0)**.
+
+### 3. Original Work — Diagnostic Tools — MIT
+
+Only the following files are original work licensed under MIT:
+
+- `accounting/sympy_proof.py`
+- `freeze_data.py`
+
+**Note:** The test file `tests/test_causal_knn_corrected.py` implements
+a reference version of the causal kNN logic and is therefore treated
+as a derivative of the original indicator (CC BY-NC-SA 4.0), not as
+original work. See `LICENSE-MAP.md` for details.
+
+---
+
+## MIT License (for original diagnostic tools)
+
+Copyright (c) 2026 Mohammad Darang
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject
+to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---
+
+## Commercial Use
+
+Commercial use of the derivative indicator logic is **not permitted**
+under the CC BY-NC-SA 4.0 license.
+
+Any permission for uses outside the license terms must be obtained
+from the applicable rights holder(s).
+
+**Note on third-party data:** The files under `data/` contain market
+data obtained from Yahoo Finance. This project does not relicense
+this data. Users are responsible for ensuring their use complies
+with the data provider's terms.
+
+---
+
+## Attribution to Zeiierman
+
+This work is a derivative of "AI Predictive Flow" by Zeiierman
+(https://www.tradingview.com/script/qaaxkW1P-AI-Predictive-Flow-Zeiierman/),
+licensed under CC BY-NC-SA 4.0.
+
+**Changes made:**
+- Reconstructed target variable to eliminate backward-looking bias
+- Removed self-contamination of training set
+- Converted Pine Script to Python for local backtesting
+- Added verification pipeline (7 leakage tests, sympy accounting proof)
+- Added walk-forward, chronological windows, and cross-asset validation
+- Frozen data snapshot with SHA-256 hashes
+
+**License of derivative files:** CC BY-NC-SA 4.0

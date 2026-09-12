@@ -1,0 +1,16 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.3, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\daran\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\daran\OneDrive\Desktop\python
+plugins: anyio-4.9.0
+collecting ... collected 7 items
+
+test_causal_knn_corrected.py::test_current_bar_never_enters_training_same_bar PASSED [ 14%]
+test_causal_knn_corrected.py::test_labels_are_forward_returns_known_only_after_horizon PASSED [ 28%]
+test_causal_knn_corrected.py::test_ring_buffer_never_exceeds_memory PASSED [ 42%]
+test_causal_knn_corrected.py::test_prediction_is_normalized_inverse_distance_weighted_mean PASSED [ 57%]
+test_causal_knn_corrected.py::test_no_prediction_before_k_mature_samples PASSED [ 71%]
+test_causal_knn_corrected.py::test_random_walk_has_no_predictive_edge PASSED [ 85%]
+test_causal_knn_corrected.py::test_determinism PASSED                    [100%]
+
+============================= 7 passed in 38.92s ==============================

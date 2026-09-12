@@ -1,0 +1,9 @@
+# Core dependencies (needed for offline reproduction of frozen results)
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+sympy>=1.12
+pytest>=7.4
+
+# Optional: only for initial data freeze (not needed for reproduction)
+yfinance>=0.2.28

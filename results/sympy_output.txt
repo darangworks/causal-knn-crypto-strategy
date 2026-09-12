@@ -1,0 +1,25 @@
+============================================================
+SYMBOLIC ACCOUNTING EQUIVALENCE PROOF
+============================================================
+
+E_final_baseline = E0 - comm*entry_ideal*qty*(slip + 1) + comm*exit_ideal*qty*(slip - 1) - qty*(entry_ideal*(slip + 1) + exit_ideal*(slip - 1))
+
+E_final_v2       = E0 - comm*entry_ideal*qty*(slip + 1) + comm*exit_ideal*qty*(slip - 1) - entry_ideal*qty*slip - exit_ideal*qty*slip - qty*(entry_ideal - exit_ideal)
+
+Difference       = 0
+
+============================================================
+RESULT
+============================================================
+Identity confirmed:
+    E_final_baseline - E_final_v2 = 0
+
+This holds for ALL possible values of:
+    entry_ideal, exit_ideal, qty, comm, slip
+
+Scope:
+    This proof establishes ALGEBRAIC EQUIVALENCE between the
+    two specified accounting formulations. It does NOT prove
+    correctness of the entire backtesting engine, position
+    sizing, execution logic, or commission application.
+============================================================
